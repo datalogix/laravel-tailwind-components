@@ -15,7 +15,6 @@ class Errors extends Component
     public $name;
 
     /**
-     *
      * The error bag.
      *
      * @var string
