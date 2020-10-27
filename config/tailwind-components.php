@@ -127,7 +127,7 @@ return [
 
                 'emptyText' => [
                     'class' => 'px-6 py-4 whitespace-no-wrap text-lg text-gray-700 text-center',
-                ]
+                ],
             ],
 
             'table.heading' => [

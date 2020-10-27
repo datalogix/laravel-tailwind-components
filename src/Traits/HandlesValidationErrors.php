@@ -3,8 +3,8 @@
 namespace Datalogix\TailwindComponents\Traits;
 
 use Illuminate\Support\Facades\View;
-use Illuminate\Support\ViewErrorBag;
 use Illuminate\Support\Str;
+use Illuminate\Support\ViewErrorBag;
 
 trait HandlesValidationErrors
 {

@@ -55,7 +55,7 @@ class TailwindComponentsServiceProvider extends ServiceProvider
                 return Collection::make($component['aliases'] ?? [])
                     ->push($alias)
                     ->unique()
-                    ->mapWithKeys(function($value, $key) use ($component) {
+                    ->mapWithKeys(function ($value, $key) use ($component) {
                         return [$value => $component['class']];
                     })->toArray();
             })

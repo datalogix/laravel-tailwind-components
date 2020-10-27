@@ -85,7 +85,7 @@ class Input extends Component
     {
         $types = $this->config['types_by_name'] ?? [];
 
-        foreach($types as $type => $names) {
+        foreach ($types as $type => $names) {
             if (Str::contains($name, $names)) {
                 return $type;
             }
