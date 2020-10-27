@@ -38,7 +38,7 @@ trait HandlesValidationErrors
     protected function getErrorBag($bag = 'default')
     {
         $bags = View::shared('errors', function () {
-            return request()->session()->get('errors', new ViewErrorBag);
+            return request()->session()->get('errors', new ViewErrorBag); // @codeCoverageIgnore
         });
 
         return $bags->getBag($bag);

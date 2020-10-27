@@ -102,11 +102,13 @@ class TailwindComponentsServiceProvider extends ServiceProvider
                 continue;
             }
 
+            // @codeCoverageIgnoreStart
             if (is_numeric($key)) {
                 continue;
             }
 
             $array[$key] = $this->mergeConfigs($value, $merging[$key]);
+            // @codeCoverageIgnoreEnd
         }
 
         return $array;
