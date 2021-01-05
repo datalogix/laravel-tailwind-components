@@ -1,4 +1,4 @@
-<div {!! $themeProvider->{$type === 'hidden' ? 'hidden' : 'container'} !!}">
+<div {!! $themeProvider->{$type === 'hidden' ? 'hidden' : 'container'} !!}>
     <label {!! $themeProvider->label !!}>
         <x-label :label="$label" />
 
